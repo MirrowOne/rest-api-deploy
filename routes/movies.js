@@ -1,7 +1,7 @@
 import { Router } from 'express'
-import { readJSON } from '../utils/readJSON'
+import { readJSON } from '../utils/readJSON.js'
 import { randomUUID } from 'node:crypto'
-import { validateMovie, validatePartialMovie } from '../schemas/movies'
+import { validateMovie, validatePartialMovie } from '../schemas/movies.js'
 
 const movies = readJSON('./movies.json')
 
