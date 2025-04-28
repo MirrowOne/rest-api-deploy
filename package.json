@@ -17,6 +17,7 @@
     "extends": "standard"
   },
   "dependencies": {
+    "cors": "2.8.5",
     "express": "5.1.0",
     "zod": "3.24.3"
   }
