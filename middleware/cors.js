@@ -5,8 +5,9 @@ const ACCEPTED_ORIGINS = [
   'http://127.0.0.1:5500',
   'http://localhost:1234',
   'https://movies.com',
-  // eslint-disable-next-line comma-dangle
   'https://mirrowapi.org',
+  // eslint-disable-next-line comma-dangle
+  'https://rest-api-deploy-7kwk.onrender.com',
 ]
 
 export const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) =>

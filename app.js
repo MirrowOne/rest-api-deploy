@@ -13,7 +13,7 @@ app.disable('x-powered-by') // deshabilitar x powered by: express
 //! Rutas
 app.use('/movies', moviesRouter)
 
-const PORT = process.env.PORT ?? 10000
+const PORT = process.env.PORT ?? 1234
 
 app.listen(PORT, () => {
   console.log(`server lintening on port http://localhost:${PORT}`)
