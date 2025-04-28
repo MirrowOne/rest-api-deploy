@@ -1,6 +1,6 @@
 /* eslint-disable space-before-function-paren */
 /* eslint-disable comma-dangle */
-const z = require('zod')
+import z from 'zod'
 
 const movieSchema = z.object({
   title: z.string({
@@ -31,14 +31,12 @@ const movieSchema = z.object({
   ),
 })
 
-function validateMovie(object) {
+export function validateMovie(object) {
   return movieSchema.safeParse(object)
 }
 
 // parse no hace que sea un requisito todos los campos
 // pero si existe un campo lo valida correctamente
-function validatePartialMovie(input) {
+export function validatePartialMovie(input) {
   return movieSchema.partial().safeParse(input)
 }
-
-module.exports = { validateMovie, validatePartialMovie }

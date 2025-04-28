@@ -17,7 +17,7 @@
         }
     </style>
     <script type="module">
-        fetch('http://localhost:1234/movies')
+        fetch('https://rest-api-deploy-7kwk.onrender.com/movies')
         .then(res => res.json())
         .then(movies => {
             const html = movies.map(movie => {
