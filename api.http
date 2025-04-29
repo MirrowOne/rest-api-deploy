@@ -22,11 +22,11 @@ Content-Type: application/json
 }
 
 ### Actualizar una parte de la pelicula
-PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+PATCH http://localhost:1234/movies/4d609004-193d-47da-a795-5018f55d83be
 Content-Type: application/json
 # modificar la id no afecta porque no se esta validando
 {
-  "title": "webibabo",
-  "year": 1933
+  "title": "SHARK TANK",
+  "year": 2015
 }
 

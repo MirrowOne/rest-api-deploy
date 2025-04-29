@@ -1,6 +1,4 @@
-/* eslint-disable comma-dangle */
 import express, { json } from 'express'
-
 import { moviesRouter } from './routes/movies.js'
 import { corsMiddleware } from './middleware/cors.js'
 

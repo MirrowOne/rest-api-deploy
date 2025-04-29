@@ -17,7 +17,7 @@
         }
     </style>
     <script type="module">
-        fetch('https://localhost:1234/movies')
+        fetch('https://rest-api-deploy-7kwk.onrender.com/movies')
         .then(res => res.json())
         .then(movies => {
             const html = movies.map(movie => {
@@ -32,9 +32,6 @@
 
             document.querySelector('main').innerHTML = html
 
-            document.addEventListener('click', e=> {
-                
-            })
         })
     </script>
 </head>
