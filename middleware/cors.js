@@ -6,11 +6,10 @@ const ACCEPTED_ORIGINS = [
   'http://localhost:1234',
   'https://movies.com',
   'https://mirrowapi.org',
-  // eslint-disable-next-line comma-dangle
   'https://rest-api-deploy-7kwk.onrender.com',
 ]
 
-export const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) =>
+export const corsMiddleware = () =>
   cors({
     origin: (origin, callback) => {
       if (ACCEPTED_ORIGINS.includes(origin)) {
@@ -22,6 +21,5 @@ export const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) =>
       }
 
       return callback(new Error('Not allowed by CORS'))
-      // eslint-disable-next-line comma-dangle
     },
   })
