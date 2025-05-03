@@ -7,12 +7,14 @@ import {
   filteredMoviesByGenre,
 } from './querys/querysSQL.js'
 
+import { DB_HOST, DB_NAME, DB_PASSWORD, DB_PORT } from './dbconfig.js'
+
 const config = {
-  host: process.env.MYSQLHOST || 'localhost',
-  user: process.env.MYSQLUSER || 'root',
-  port: process.env.MYSQLPORT || 3306,
-  password: process.env.MYSQLPASSWORD || '',
-  database: process.env.MYSQL_DATABASE || 'moviesdb',
+  host: DB_HOST,
+  user: DB_NAME,
+  port: DB_PORT,
+  password: DB_PASSWORD,
+  database: DB_NAME,
 }
 
 const connection = await mysql.createConnection(config)
