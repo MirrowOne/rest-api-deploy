@@ -7,11 +7,11 @@ import {
   filteredMoviesByGenre,
 } from './querys/querysSQL.js'
 
-import { DB_HOST, DB_NAME, DB_PASSWORD, DB_PORT } from './dbconfig.js'
+import { DB_HOST, DB_NAME, DB_PASSWORD, DB_PORT, DB_USER } from './dbconfig.js'
 
 const config = {
   host: DB_HOST,
-  user: DB_NAME,
+  user: DB_USER,
   port: DB_PORT,
   password: DB_PASSWORD,
   database: DB_NAME,
